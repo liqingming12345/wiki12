@@ -37,7 +37,7 @@
     </a-menu>
   </a-layout-sider>
    <a-layout-content
-      :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+      :style="{ background: '#FF00FF', padding: '24px', margin: 0, minHeight: '280px' }"
   >
     Content
   </a-layout-content>
