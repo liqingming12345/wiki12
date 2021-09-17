@@ -8,7 +8,7 @@
         :style="{ lineHeight: '64px' }"
     >
       <a-menu-item key="1">
-        nav 1314
+        nav ttssd
       </a-menu-item>
       <a-menu-item key="2">
         nav 2
@@ -24,6 +24,6 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'the-header',
+  name: 'the-header'
 });
 </script>
