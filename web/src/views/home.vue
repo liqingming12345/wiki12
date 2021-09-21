@@ -1,6 +1,6 @@
 <template>
   <a-layout>
-    <a-layout-sider width="200" style="background: #fff">
+    <a-layout-sider width="200" style="background: #7FFFAA">
       <a-menu
           mode="inline"
           :style="{ height: '100%', borderRight: 0 }"
@@ -84,7 +84,7 @@ export default defineComponent({
     const ebooks1 = reactive({books: []});
 
     onMounted(() => {
-     console.log("onMountted222");
+      console.log("onMountted222");
       axios.get(process.env.VUE_APP_SERVER + "/ebook/list").then((response) => {
         const data = response.data;
         ebooks.value = data.content;
