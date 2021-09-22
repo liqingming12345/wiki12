@@ -33,26 +33,13 @@
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 
-/*const listData: any = [];
-for (let i = 0; i < 23; i++) {
-  listData.push({
-    href: 'https://www.antdv.com/',
-    title: `ant design vue part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-        'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-        'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  });
-}*/
-
 export default defineComponent({
   name: 'AdminEbook',
   setup() {
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 2,
+      pageSize: 4,
       total: 0
     });
     const loading = ref(false);
@@ -101,14 +88,21 @@ export default defineComponent({
      **/
     const handleQuery = (params: any) => {
       loading.value = true;
-      console.log(ebooks);
-      axios.get(process.env.VUE_APP_SERVER + "/ebook/list", params).then((response) => {
+      //console.log(ebooks);
+      axios.get(process.env.VUE_APP_SERVER + "/ebook/list", {
+        params: {
+          page: params.page,
+          size: params.size
+        }
+      }).then((response) => {
         loading.value = false;
         const data = response.data;
         ebooks.value = data.content.list;
+        console.log(ebooks)
 
         // 重置分页按钮
         pagination.value.current = params.page;
+        pagination.value.total = data.content.total;
       });
     };
 
@@ -124,7 +118,10 @@ export default defineComponent({
     };
 
     onMounted(() => {
-      handleQuery({});
+      handleQuery({
+        page:1,
+        size:pagination.value.pageSize,
+      });
     });
 
     return {
