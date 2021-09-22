@@ -123,7 +123,7 @@ export default defineComponent({
         loading.value = false;
         const data = response.data;
         ebooks.value = data.content.list;
-        console.log(ebooks)
+
 
         // 重置分页按钮
         pagination.value.current = params.page;
@@ -138,7 +138,7 @@ export default defineComponent({
       console.log("看看自带的分页参数都有啥：" + pagination);
       handleQuery({
         page: pagination.current,
-        size: pagination.pageSize
+        size: pagination.pageSize,
       });
     };
 
@@ -148,10 +148,20 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      setTimeout(() => {
-        modalVisible.value = false;
-        modalLoading.value = false;
-      }, 2000);
+      axios.post(process.env.VUE_APP_SERVER + "/ebook/save", ebook.value).then((response) => {
+
+        const data = response.data;  //data = commonResp
+        if(data.success){
+          modalVisible.value = false;
+          modalLoading.value = false;
+
+          //重新加载列表
+          handleQuery({
+            page:pagination.value.current,
+            size:pagination.value.pageSize,
+          });
+        }
+       });
     };
 
     /**
