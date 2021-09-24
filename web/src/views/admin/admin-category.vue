@@ -6,16 +6,16 @@
       <p>
         <a-form layout="inline" :model="param">
           <a-form-item>
-             <a-button type="primary" @click="handleQuery({})">
-                        查询
-              </a-button>
-              </a-form-item>
-               <a-form-item>
-               <a-button type="primary" @click="add()">
-                        新增
-                </a-button>
-                </a-form-item>
-            </a-form>
+            <a-button type="primary" @click="handleQuery({})">
+              查询
+            </a-button>
+          </a-form-item>
+          <a-form-item>
+            <a-button type="primary" @click="add()">
+              新增
+            </a-button>
+          </a-form-item>
+        </a-form>
       </p>
       <a-table
           :columns="columns"
@@ -25,7 +25,7 @@
           :pagination="false"
       >
         <template #cover="{ text: cover }">
-          <img v-if="cover" :src="cover" alt="avatar" />
+          <img v-if="cover" :src="cover" alt="avatar"/>
         </template>
         <template v-slot:action="{text, record }">
           <a-space size="small">
@@ -56,23 +56,35 @@
   >
     <a-form :model="category" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
 
-            <a-form-item label="名称">
-              <a-input v-model:value="category.name" />
-            </a-form-item>
-            <a-form-item label="父分类">
-              <a-input v-model:value="category.parent" />
-            </a-form-item>
-            <a-form-item label="顺序">
-              <a-input v-model:value="category.sort" />
-            </a-form-item>
-          </a-form>
+      <a-form-item label="名称">
+        <a-input v-model:value="category.name"/>
+      </a-form-item>
+      <a-form-item label="父分类">
+        <a-select
+            v-model:value="category.parent"
+            ref="select"
+        >
+          <a-select-option value="0">
+            无
+          </a-select-option>
+          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">
+            {{ c.name }}
+          </a-select-option>
+        </a-select>
+
+
+      </a-form-item>
+      <a-form-item label="顺序">
+        <a-input v-model:value="category.sort"/>
+      </a-form-item>
+    </a-form>
   </a-modal>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import {defineComponent, onMounted, ref} from 'vue';
 import axios from 'axios';
-import{ message } from 'ant-design-vue';
+import {message} from 'ant-design-vue';
 import {Tool} from "@/util/tool";
 
 
@@ -103,7 +115,7 @@ export default defineComponent({
       {
         title: 'Action',
         key: 'action',
-        slots: { customRender: 'action' }
+        slots: {customRender: 'action'}
       },
       //console.log(response)
     ];
@@ -127,17 +139,17 @@ export default defineComponent({
     const handleQuery = () => {
       loading.value = true;
       //console.log(categorys);
-      axios.get(process.env.VUE_APP_SERVER + "/category/all", ).then((response) => {
+      axios.get(process.env.VUE_APP_SERVER + "/category/all",).then((response) => {
         loading.value = false;
         const data = response.data;
-        if(data.success){
+        if (data.success) {
           categorys.value = data.content;
-          console.log("原始数组：",categorys.value,0)
+          console.log("原始数组：", categorys.value, 0)
 
-          level1.value=[];
-          level1.value=Tool.array2Tree(categorys.value,0);
-          console.log("树形结构：",level1);
-        }else{
+          level1.value = [];
+          level1.value = Tool.array2Tree(categorys.value, 0);
+          console.log("树形结构：", level1);
+        } else {
           message.error(data.message);
         }
       });
@@ -150,16 +162,16 @@ export default defineComponent({
     const handleModalOk = () => {
       modalLoading.value = true;
       axios.post(process.env.VUE_APP_SERVER + "/category/save", category.value).then((response) => {
-        modalLoading.value=false;
+        modalLoading.value = false;
         const data = response.data;  //data = commonResp
-        if(data.success){
+        if (data.success) {
           modalVisible.value = false;
           //重新加载列表
           handleQuery();
-        } else{
+        } else {
           message.error(data.message);
         }
-       });
+      });
     };
 
     /**
@@ -181,10 +193,10 @@ export default defineComponent({
      *
      * 删除
      */
-    const handleDelete = (id:number) =>{
-      axios.delete(process.env.VUE_APP_SERVER + "/category/delete/"+ id).then((response) => {
+    const handleDelete = (id: number) => {
+      axios.delete(process.env.VUE_APP_SERVER + "/category/delete/" + id).then((response) => {
         const data = response.data;  //data = commonResp
-        if(data.success){
+        if (data.success) {
           //重新加载列表
           handleQuery();
         }
