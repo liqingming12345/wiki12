@@ -15,7 +15,7 @@
             </a-button>
           </a-form-item>
           <a-form-item>
-            <a-button type="primary" @click="add()">
+            <a-button type="primary" @click="add()" size="large">
               新增
             </a-button>
           </a-form-item>
@@ -37,6 +37,11 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
+            <router-link to="/admin/doc">
+            <a-button type="primary">
+              文档管理
+            </a-button>
+            </router-link>
             <a-button type="primary" @click="edit(record)">
               编辑
             </a-button>
@@ -88,7 +93,6 @@ import {defineComponent, onMounted, ref} from 'vue';
 import axios from 'axios';
 import {message} from 'ant-design-vue';
 import {Tool} from "@/util/tool";
-
 export default defineComponent({
   name: 'AdminEbook',
   setup() {
@@ -101,7 +105,6 @@ export default defineComponent({
       total: 0
     });
     const loading = ref(false);
-
     const columns = [
       {
         title: '封面',
@@ -134,7 +137,6 @@ export default defineComponent({
         slots: {customRender: 'action'}
       }
     ];
-
     /**
      * 数据查询
      **/
@@ -151,7 +153,6 @@ export default defineComponent({
         const data = response.data;
         if (data.success) {
           ebooks.value = data.content.list;
-
           // 重置分页按钮
           pagination.value.current = params.page;
           pagination.value.total = data.content.total;
@@ -160,7 +161,6 @@ export default defineComponent({
         }
       });
     };
-
     /**
      * 表格点击页码时触发
      */
@@ -171,7 +171,6 @@ export default defineComponent({
         size: pagination.pageSize
       });
     };
-
     // -------- 表单 ---------
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
@@ -189,7 +188,6 @@ export default defineComponent({
         const data = response.data; // data = commonResp
         if (data.success) {
           modalVisible.value = false;
-
           // 重新加载列表
           handleQuery({
             page: pagination.value.current,
@@ -200,7 +198,6 @@ export default defineComponent({
         }
       });
     };
-
     /**
      * 编辑
      */
@@ -209,7 +206,6 @@ export default defineComponent({
       ebook.value = Tool.copy(record);
       categoryIds.value = [ebook.value.category1Id, ebook.value.category2Id]
     };
-
     /**
      * 新增
      */
@@ -217,7 +213,6 @@ export default defineComponent({
       modalVisible.value = true;
       ebook.value = {};
     };
-
     const handleDelete = (id: number) => {
       axios.delete(process.env.VUE_APP_SERVER + "/ebook/delete/" + id).then((response) => {
         const data = response.data; // data = commonResp
@@ -230,7 +225,6 @@ export default defineComponent({
         }
       });
     };
-
     const level1 = ref();
     let categorys: any;
     /**
@@ -244,11 +238,9 @@ export default defineComponent({
         if (data.success) {
           categorys = data.content;
           console.log("原始数组：", categorys);
-
           level1.value = [];
           level1.value = Tool.array2Tree(categorys, 0);
           console.log("树形结构：", level1.value);
-
           // 加载完分类后，再加载电子书，否则如果分类树加载很慢，则电子书渲染会报错
           handleQuery({
             page: 1,
@@ -259,7 +251,6 @@ export default defineComponent({
         }
       });
     };
-
     const getCategoryName = (cid: number) => {
       // console.log(cid)
       let result = "";
@@ -271,12 +262,13 @@ export default defineComponent({
       });
       return result;
     };
-
     onMounted(() => {
       handleQueryCategory();
-
+      /*handleQuery({
+        page: 1,
+        size: pagination.value.pageSize,
+      });*/
     });
-
     return {
       param,
       ebooks,
@@ -286,17 +278,14 @@ export default defineComponent({
       handleTableChange,
       handleQuery,
       getCategoryName,
-
       edit,
       add,
-
       ebook,
       modalVisible,
       modalLoading,
       handleModalOk,
       categoryIds,
       level1,
-
       handleDelete
     }
   }
