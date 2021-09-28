@@ -78,33 +78,30 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, onMounted, ref} from 'vue';
+import { defineComponent, onMounted, ref, createVNode } from 'vue';
 import axios from 'axios';
-import {message} from 'ant-design-vue';
+import {message, Modal} from 'ant-design-vue';
 import {Tool} from "@/util/tool";
 import {useRoute} from "vue-router";
-
+import ExclamationCircleOutlined from "@ant-design/icons-vue/ExclamationCircleOutlined";
 
 export default defineComponent({
   name: 'AdminDoc',
   setup() {
     const route = useRoute();
-          console.log("路由：", route);
-          console.log("route.path：", route.path);
-          console.log("route.query：", route.query);
-          console.log("route.param：", route.params);
-          console.log("route.fullPath：", route.fullPath);
-          console.log("route.name：", route.name);
-          console.log("route.meta：", route.meta);
-
+    console.log("路由：", route);
+    console.log("route.path：", route.path);
+    console.log("route.query：", route.query);
+    console.log("route.param：", route.params);
+    console.log("route.fullPath：", route.fullPath);
+    console.log("route.name：", route.name);
+    console.log("route.meta：", route.meta);
     const param = ref();
     param.value = {};
     const docs = ref();
-
     const loading = ref(false);
 
     const columns = [
-
       {
         title: '名称',
         dataIndex: 'name'
@@ -121,9 +118,8 @@ export default defineComponent({
       {
         title: 'Action',
         key: 'action',
-        slots: {customRender: 'action'}
-      },
-      //console.log(response)
+        slots: { customRender: 'action' }
+      }
     ];
 
     /**
@@ -144,13 +140,14 @@ export default defineComponent({
      **/
     const handleQuery = () => {
       loading.value = true;
-      //console.log(docs);
-      axios.get(process.env.VUE_APP_SERVER + "/doc/all",).then((response) => {
+      // 如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
+      level1.value = [];
+      axios.get(process.env.VUE_APP_SERVER + "/doc/all").then((response) => {
         loading.value = false;
         const data = response.data;
         if (data.success) {
           docs.value = data.content;
-          console.log("原始数组：", docs.value, 0)
+          console.log("原始数组：", docs.value);
 
           level1.value = [];
           level1.value = Tool.array2Tree(docs.value, 0);
@@ -164,7 +161,7 @@ export default defineComponent({
     // -------- 表单 ---------
     // 因为树选择组件的属性状态，会随当前编辑的节点而变化，所以单独声明一个响应式变量
     const treeSelectData = ref();
-     treeSelectData.value = [];
+    treeSelectData.value = [];
     const doc = ref({});
     const modalVisible = ref(false);
     const modalLoading = ref(false);
@@ -172,10 +169,11 @@ export default defineComponent({
       modalLoading.value = true;
       axios.post(process.env.VUE_APP_SERVER + "/doc/save", doc.value).then((response) => {
         modalLoading.value = false;
-        const data = response.data;  //data = commonResp
+        const data = response.data; // data = commonResp
         if (data.success) {
           modalVisible.value = false;
-          //重新加载列表
+
+          // 重新加载列表
           handleQuery();
         } else {
           message.error(data.message);
@@ -184,37 +182,38 @@ export default defineComponent({
     };
 
     /**
-     +       * 将某节点及其子孙节点全部置为disabled
-     +       */
-          const setDisable = (treeSelectData: any, id: any) => {
-              // console.log(treeSelectData, id);
-                  // 遍历数组，即遍历某一层节点
-                      for (let i = 0; i < treeSelectData.length; i++) {
-                  const node = treeSelectData[i];
-                  if (node.id === id) {
-                      // 如果当前节点就是目标节点
-                          console.log("disabled", node);
-                      // 将目标节点设置为disabled
-                          node.disabled = true;
+     * 将某节点及其子孙节点全部置为disabled
+     */
+    const setDisable = (treeSelectData: any, id: any) => {
+      // console.log(treeSelectData, id);
+      // 遍历数组，即遍历某一层节点
+      for (let i = 0; i < treeSelectData.length; i++) {
+        const node = treeSelectData[i];
+        if (node.id === id) {
+          // 如果当前节点就是目标节点
+          console.log("disabled", node);
+          // 将目标节点设置为disabled
+          node.disabled = true;
 
-                         // 遍历所有子节点，将所有子节点全部都加上disabled
-                              const children = node.children;
-                      if (Tool.isNotEmpty(children)) {
-                          for (let j = 0; j < children.length; j++) {
-                              setDisable(children, children[j].id)
-                            }
-                       }
-                    } else {
-                      // 如果当前节点不是目标节点，则到其子节点再找找看。
-                          const children = node.children;
-                      if (Tool.isNotEmpty(children)) {
-                          setDisable(children, id);
-                        }
-                    }
-                }
-            };
+          // 遍历所有子节点，将所有子节点全部都加上disabled
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            for (let j = 0; j < children.length; j++) {
+              setDisable(children, children[j].id)
+            }
+          }
+        } else {
+          // 如果当前节点不是目标节点，则到其子节点再找找看。
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            setDisable(children, id);
+          }
+        }
+      }
+    };
 
-    const ids: Array<string> = [];
+    const deleteIds: Array<string> = [];
+    const deleteNames: Array<string> = [];
     /**
      * 查找整根树枝
      */
@@ -228,7 +227,8 @@ export default defineComponent({
           console.log("delete", node);
           // 将目标ID放入结果集ids
           // node.disabled = true;
-          ids.push(id);
+          deleteIds.push(id);
+          deleteNames.push(node.name);
 
           // 遍历所有子节点
           const children = node.children;
@@ -255,11 +255,11 @@ export default defineComponent({
       doc.value = Tool.copy(record);
 
       // 不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
-              treeSelectData.value = Tool.copy(level1.value);
-              setDisable(treeSelectData.value, record.id);
+      treeSelectData.value = Tool.copy(level1.value);
+      setDisable(treeSelectData.value, record.id);
 
-                  // 为选择树添加一个"无"
-                      treeSelectData.value.unshift({id: 0, name: '无'});
+      // 为选择树添加一个"无"
+      treeSelectData.value.unshift({id: 0, name: '无'});
     };
 
     /**
@@ -268,26 +268,36 @@ export default defineComponent({
     const add = () => {
       modalVisible.value = true;
       doc.value = {
-        ebookId:route.query.ebookId
+        ebookId: route.query.ebookId
       };
 
       treeSelectData.value = Tool.copy(level1.value);
 
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: '无'});
+
     };
-    /**
-     *
-     * 删除
-     */
+
     const handleDelete = (id: number) => {
-      getDeleteIds(level1.value,id);
-      axios.delete(process.env.VUE_APP_SERVER + "/doc/delete/" + ids.join(",")).then((response) => {
-        const data = response.data;  //data = commonResp
-        if (data.success) {
-          //重新加载列表
-          handleQuery();
-        }
+      // console.log(level1, level1.value, id)
+      // 清空数组，否则多次删除时，数组会一直增加
+      deleteIds.length = 0;
+      deleteNames.length = 0;
+      getDeleteIds(level1.value, id);
+      Modal.confirm({
+        title: '重要提醒',
+        icon: createVNode(ExclamationCircleOutlined),
+        content: '将删除：【' + deleteNames.join("，") + "】删除后不可恢复，确认删除？",
+        onOk() {
+          // console.log(ids)
+          axios.delete(process.env.VUE_APP_SERVER + "/doc/delete/" + deleteIds.join(",")).then((response) => {
+            const data = response.data; // data = commonResp
+            if (data.success) {
+              // 重新加载列表
+              handleQuery();
+            }
+          });
+        },
       });
     };
 
@@ -297,7 +307,7 @@ export default defineComponent({
 
     return {
       param,
-      //docs,
+      // docs,
       level1,
       columns,
       loading,
@@ -325,3 +335,4 @@ img {
   height: 50px;
 }
 </style>
+
