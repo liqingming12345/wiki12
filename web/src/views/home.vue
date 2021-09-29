@@ -7,39 +7,45 @@
           @click="handleClick"
       >
         <a-menu-item key="welcome">
-          <MailOutlined />
+          <MailOutlined/>
           <span>欢迎</span>
         </a-menu-item>
         <a-sub-menu v-for="item in level1" :key="item.id">
           <template v-slot:title>
-            <span><user-outlined />{{item.name}}</span>
+            <span><user-outlined/>{{ item.name }}</span>
           </template>
           <a-menu-item v-for="child in item.children" :key="child.id">
-            <MailOutlined /><span>{{child.name}}</span>
+            <MailOutlined/>
+            <span>{{ child.name }}</span>
           </a-menu-item>
         </a-sub-menu>
       </a-menu>
     </a-layout-sider>
     <a-layout-content
-        :style="{ background: '#AFEEEE', padding: '24px', margin: 0, minHeight: '280px' }"
+        :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
       <div class="welcome" v-show="isShowWelcome">
-        <h1>欢迎使用甲娃知识库</h1>
+        <h1>欢迎使用甲蛙知识库</h1>
       </div>
-      <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
+      <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }"
+              :data-source="ebooks">
         <template #renderItem="{ item }">
           <a-list-item key="item.name">
             <template #actions>
               <span v-for="{ type, text } in actions" :key="type">
-                <component v-bind:is="type" style="margin-right: 8px" />
+                <component v-bind:is="type" style="margin-right: 8px"/>
                 {{ text }}
               </span>
             </template>
             <a-list-item-meta :description="item.description">
               <template #title>
-                <a :href="item.href">{{ item.name }}</a>
+                <router-link :to="'/doc?ebookId=' + item.id">
+                  {{ item.name }}
+                </router-link>
               </template>
-              <template #avatar><a-avatar :src="item.cover"/></template>
+              <template #avatar>
+                <a-avatar :src="item.cover"/>
+              </template>
             </a-list-item-meta>
           </a-list-item>
         </template>
@@ -49,9 +55,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, reactive, toRef } from 'vue';
+import {defineComponent, onMounted, ref, reactive, toRef} from 'vue';
 import axios from 'axios';
-import { message } from 'ant-design-vue';
+import {message} from 'ant-design-vue';
 import {Tool} from "@/util/tool";
 
 // const listData: any = [];
@@ -73,7 +79,7 @@ export default defineComponent({
     const ebooks = ref();
     // const ebooks1 = reactive({books: []});
 
-    const level1 =  ref();
+    const level1 = ref();
     let categorys: any;
     /**
      * 查询所有分类
@@ -94,10 +100,6 @@ export default defineComponent({
       });
     };
 
-    /*const handleClick = (value:any) => {
-      isShowWelcome.value=value.key === 'welcome';
-    }*/
-
     const isShowWelcome = ref(true);
     let categoryId2 = 0;
 
@@ -115,21 +117,21 @@ export default defineComponent({
       });
     };
 
-    const handleClick = (value:any) => {
-      //console.log("menu click",value)
-      if(value.key === 'welcome'){
+    const handleClick = (value: any) => {
+      // console.log("menu click", value)
+      if (value.key === 'welcome') {
         isShowWelcome.value = true;
-      }else{
+      } else {
         categoryId2 = value.key;
         isShowWelcome.value = false;
-        handleQueryEbook;
+        handleQueryEbook();
       }
       // isShowWelcome.value = value.key === 'welcome';
     };
 
     onMounted(() => {
       handleQueryCategory();
-      //  handleQueryEbook();
+      // handleQueryEbook();
     });
 
     return {
@@ -143,9 +145,9 @@ export default defineComponent({
         pageSize: 3,
       },
       actions: [
-        { type: 'StarOutlined', text: '156' },
-        { type: 'LikeOutlined', text: '156' },
-        { type: 'MessageOutlined', text: '2' },
+        {type: 'StarOutlined', text: '156'},
+        {type: 'LikeOutlined', text: '156'},
+        {type: 'MessageOutlined', text: '2'},
       ],
 
       handleClick,
@@ -166,3 +168,4 @@ export default defineComponent({
   margin: 5px 0;
 }
 </style>
+
