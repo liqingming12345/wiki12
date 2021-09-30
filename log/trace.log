@@ -1314,3 +1314,130 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test' for ke
 2021-09-30 20:18:22.965 INFO  com.jiawa.wiki.service.UserService                :47   [32m                  [0;39m 总页数：1
 2021-09-30 20:18:22.966 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
 2021-09-30 20:18:22.966 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-09-30 20:44:58.748 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-09-30 20:44:58.748 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-09-30 20:44:58.748 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-09-30 20:44:58.748 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-09-30 20:44:58.749 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-09-30 20:44:58.751 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ef47c47 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.756 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fd7e01b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.759 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a8747e0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.761 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@574c04b3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.763 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5bd902b2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.765 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b1ef6ea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.768 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b16102e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.771 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c48ea63 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.774 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f97bdca (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.778 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6302b974 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:44:58.779 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-09-30 20:44:58.779 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-09-30 20:44:58.782 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-09-30 20:44:58.782 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-09-30 20:44:58.782 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-09-30 20:44:58.783 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-09-30 20:44:58.784 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-09-30 20:44:58.785 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-09-30 20:44:58.785 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-09-30 20:44:58.785 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-09-30 20:44:58.786 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-09-30 20:44:58.787 INFO  com.jiawa.wiki.service.UserService                :46   [32m                  [0;39m 总行数：2
+2021-09-30 20:44:58.787 INFO  com.jiawa.wiki.service.UserService                :47   [32m                  [0;39m 总页数：1
+2021-09-30 20:44:58.788 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-09-30 20:44:58.788 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
+2021-09-30 20:51:13.500 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-09-30 20:51:13.501 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-09-30 20:51:13.501 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-09-30 20:51:13.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-09-30 20:51:13.502 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-09-30 20:51:13.506 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e3d0155 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.509 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@544a43f5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.512 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@292281ad (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.515 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f431a75 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.518 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77cf0a08 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.521 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@711caaef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.523 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c0e6288 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.526 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2bf949ce (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.529 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24e999f3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.532 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-3 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@30361453 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-09-30 20:51:13.533 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-09-30 20:51:13.534 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-09-30 20:51:13.537 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-09-30 20:51:13.538 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-09-30 20:51:13.538 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-09-30 20:51:13.539 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-09-30 20:51:13.540 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-09-30 20:51:13.541 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-09-30 20:51:13.541 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-09-30 20:51:13.542 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-09-30 20:51:13.542 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-09-30 20:51:13.543 INFO  com.jiawa.wiki.service.UserService                :46   [32m                  [0;39m 总行数：2
+2021-09-30 20:51:13.543 INFO  com.jiawa.wiki.service.UserService                :47   [32m                  [0;39m 总页数：1
+2021-09-30 20:51:13.543 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-09-30 20:51:13.544 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
+2021-09-30 20:51:17.171 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-09-30 20:51:17.172 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-09-30 20:51:17.172 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-09-30 20:51:17.172 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-09-30 20:51:17.172 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-09-30 20:51:17.174 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-09-30 20:51:17.175 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-09-30 20:51:17.176 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-09-30 20:51:17.176 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-09-30 20:51:17.177 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-09-30 20:51:17.177 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-09-30 20:51:17.177 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-09-30 20:51:17.178 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-09-30 20:51:17.179 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-09-30 20:51:17.179 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-09-30 20:51:17.179 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-09-30 20:51:17.180 INFO  com.jiawa.wiki.service.UserService                :46   [32m                  [0;39m 总行数：2
+2021-09-30 20:51:17.180 INFO  com.jiawa.wiki.service.UserService                :47   [32m                  [0;39m 总页数：1
+2021-09-30 20:51:17.180 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-09-30 20:51:17.180 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-09-30 20:51:47.305 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 20:51:47.306 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2021-09-30 20:51:47.310 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2021-09-30 20:51:47.529 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-09-30 20:51:47.529 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-09-30 20:51:47.737 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-30 20:51:47.737 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-30 20:51:47.740 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-09-30 20:51:47.930 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-09-30 20:51:47.931 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-09-30 20:51:47.931 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-09-30 20:51:47.932 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-30 20:51:47.954 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-09-30 20:51:47.954 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 422 ms
+2021-09-30 20:51:48.289 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 20:51:48.568 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-09-30 20:51:48.578 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-09-30 20:51:48.581 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-09-30 20:51:48.585 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.087 seconds (JVM running for 15658.632)
+2021-09-30 20:51:48.587 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-09-30 20:51:48.587 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-09-30 20:51:48.587 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-09-30 20:53:22.592 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 20:53:22.593 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-09-30 20:53:22.595 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-09-30 20:53:22.618 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-09-30 20:53:22.619 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-09-30 20:53:22.619 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-09-30 20:53:22.620 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-09-30 20:53:22.621 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-09-30 20:53:22.629 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2021-09-30 20:53:22.642 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2021-09-30 20:53:22.643 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-09-30 20:53:22.644 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-09-30 20:53:22.655 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-09-30 20:53:22.656 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-09-30 20:53:22.657 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-09-30 20:53:22.659 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-09-30 20:53:22.660 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-09-30 20:53:22.661 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-09-30 20:53:22.661 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-09-30 20:53:22.662 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-09-30 20:53:22.663 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-09-30 20:53:22.664 INFO  com.jiawa.wiki.service.UserService                :46   [32m                  [0;39m 总行数：2
+2021-09-30 20:53:22.665 INFO  com.jiawa.wiki.service.UserService                :47   [32m                  [0;39m 总页数：1
+2021-09-30 20:53:22.675 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-09-30 20:53:22.675 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：58 ms -------------
