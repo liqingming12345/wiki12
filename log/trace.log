@@ -87,3 +87,464 @@
 2021-10-01 02:41:35.861 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
 2021-10-01 02:41:35.866 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
 2021-10-01 02:41:35.866 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：69 ms -------------
+2021-10-01 02:44:58.903 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:44:58.903 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 02:44:58.904 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 02:44:58.904 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:44:58.905 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 02:44:58.911 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@bda1740 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.912 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62554aba (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.915 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38081947 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.917 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63337911 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.919 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f7e6e31 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.922 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@47b6f5fe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.924 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f8c0e6e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.926 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@470f037f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.927 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3bfce249 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.929 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-6 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b95e9cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 02:44:58.930 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 02:44:58.931 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:44:58.943 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 02:44:58.944 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-10-01 02:44:58.944 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:44:58.945 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 02:44:58.945 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 02:44:58.946 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:44:58.946 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:44:58.947 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 02:44:58.947 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-10-01 02:44:58.948 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：2
+2021-10-01 02:44:58.948 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 02:44:58.955 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-10-01 02:44:58.955 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：52 ms -------------
+2021-10-01 02:44:59.707 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:44:59.708 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-01 02:44:59.708 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-01 02:44:59.708 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:44:59.708 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-01 02:44:59.709 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-01 02:44:59.710 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:44:59.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-01 02:44:59.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-01 02:44:59.711 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-01 02:44:59.712 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-01 02:44:59.713 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-01 02:44:59.713 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-01 02:44:59.713 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-01 02:44:59.714 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-01 02:44:59.714 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-01 02:44:59.714 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-01 02:44:59.714 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-01 02:44:59.715 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-01 02:44:59.716 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-01 02:44:59.716 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-10-01 02:44:59.748 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:44:59.749 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-10-01 02:44:59.749 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2021-10-01 02:44:59.749 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:44:59.750 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 02:44:59.756 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-10-01 02:44:59.757 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:44:59.758 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 02:44:59.758 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2021-10-01 02:44:59.758 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:44:59.759 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-10-01 02:44:59.759 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 02:44:59.760 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-10-01 02:44:59.761 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 101, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, null, null, null
+2021-10-01 02:44:59.761 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, 102, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, null, null, null
+2021-10-01 02:44:59.761 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, 201, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2021-10-01 02:44:59.761 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2021-10-01 02:44:59.762 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2021-10-01 02:44:59.762 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m                  [0;39m <==      Total: 5
+2021-10-01 02:44:59.762 INFO  com.jiawa.wiki.service.EbookService               :46   [32m                  [0;39m 总行数：5
+2021-10-01 02:44:59.763 INFO  com.jiawa.wiki.service.EbookService               :47   [32m                  [0;39m 总页数：1
+2021-10-01 02:44:59.768 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":101,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"category2Id":102,"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"category2Id":201,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2021-10-01 02:44:59.768 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
+2021-10-01 02:45:00.459 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:45:00.459 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-01 02:45:00.459 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-01 02:45:00.459 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:45:00.459 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-01 02:45:00.460 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-01 02:45:00.461 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:45:00.461 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-01 02:45:00.462 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-01 02:45:00.462 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-01 02:45:00.462 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-01 02:45:00.463 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-01 02:45:00.463 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-01 02:45:00.464 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-01 02:45:00.464 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-01 02:45:00.464 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-01 02:45:00.464 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-01 02:45:00.464 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-01 02:45:00.465 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-01 02:45:00.465 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-01 02:45:00.465 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-01 02:45:00.465 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-01 02:45:00.466 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-01 02:45:00.466 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-01 02:45:00.467 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-01 02:45:00.467 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-10-01 02:45:02.016 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:45:02.016 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-01 02:45:02.017 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-01 02:45:02.017 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:45:02.018 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-01 02:45:02.019 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-01 02:45:02.019 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:45:02.020 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-01 02:45:02.021 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-01 02:45:02.021 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-01 02:45:02.021 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-01 02:45:02.022 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-01 02:45:02.022 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-01 02:45:02.022 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-01 02:45:02.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-01 02:45:02.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-01 02:45:02.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-01 02:45:02.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-01 02:45:02.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-01 02:45:02.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-01 02:45:02.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-01 02:45:02.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-01 02:45:02.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-01 02:45:02.025 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-01 02:45:02.026 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-01 02:45:02.026 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-10-01 02:45:03.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:45:03.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 02:45:03.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 02:45:03.234 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:45:03.234 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 02:45:03.235 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 02:45:03.235 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:45:03.236 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 02:45:03.237 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-10-01 02:45:03.237 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:45:03.238 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 02:45:03.238 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 02:45:03.239 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:45:03.239 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:45:03.239 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 02:45:03.240 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-10-01 02:45:03.240 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：2
+2021-10-01 02:45:03.240 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 02:45:03.241 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-10-01 02:45:03.241 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-10-01 02:45:03.789 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:45:03.789 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-01 02:45:03.789 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-01 02:45:03.790 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:45:03.790 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-01 02:45:03.791 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-01 02:45:03.791 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:45:03.792 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-01 02:45:03.793 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-01 02:45:03.793 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-01 02:45:03.793 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-01 02:45:03.794 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-01 02:45:03.794 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-01 02:45:03.794 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-01 02:45:03.794 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-01 02:45:03.795 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-01 02:45:03.795 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-01 02:45:03.795 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-01 02:45:03.795 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-01 02:45:03.795 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-01 02:45:03.796 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-01 02:45:03.796 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-01 02:45:03.796 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-01 02:45:03.796 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-01 02:45:03.797 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-01 02:45:03.797 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-10-01 02:55:47.973 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-01 02:55:47.974 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
+2021-10-01 02:55:47.981 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
+2021-10-01 02:55:48.198 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-01 02:55:48.199 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-01 02:55:48.400 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-01 02:55:48.400 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-01 02:55:48.401 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-10-01 02:55:48.555 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-01 02:55:48.556 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-01 02:55:48.556 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-01 02:55:48.556 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-01 02:55:48.572 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-01 02:55:48.572 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 370 ms
+2021-10-01 02:55:48.856 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-01 02:55:49.197 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-01 02:55:49.211 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-01 02:55:49.215 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-01 02:55:49.219 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.051 seconds (JVM running for 37499.266)
+2021-10-01 02:55:49.220 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-10-01 02:55:49.221 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-01 02:55:49.221 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-01 02:55:50.839 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-01 02:55:50.953 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-01 02:55:50.954 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-01 02:55:51.107 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-01 02:55:51.107 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-01 02:55:51.109 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-10-01 02:55:51.210 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-01 02:55:51.211 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-01 02:55:51.211 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-01 02:55:51.211 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-01 02:55:51.227 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-01 02:55:51.227 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 271 ms
+2021-10-01 02:55:51.572 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-01 02:55:51.821 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-01 02:55:51.830 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-01 02:55:51.833 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-01 02:55:51.838 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.913 seconds (JVM running for 37501.886)
+2021-10-01 02:55:51.840 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-10-01 02:55:51.840 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-01 02:55:51.840 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-01 02:57:24.073 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-01 02:57:24.074 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-01 02:57:24.075 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-10-01 02:57:24.090 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:57:24.091 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-01 02:57:24.091 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-01 02:57:24.091 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:57:24.092 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-10-01 02:57:24.098 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-7 - Starting...
+2021-10-01 02:57:24.106 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-7 - Start completed.
+2021-10-01 02:57:24.106 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 02:57:24.107 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-10-01 02:57:24.108 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:57:24.108 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:57:24.109 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:57:24.109 INFO  com.jiawa.wiki.service.UserService                :135  [32m                  [0;39m 密码不对, 输入密码：e70e2222a9d67c4f2eae107533359aa4, 数据库密码：f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:57:24.110 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m                  [0;39m 业务异常：用户名不存在或密码错误
+2021-10-01 02:57:24.112 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 用户名不存在或密码错误]
+2021-10-01 02:57:30.827 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:57:30.827 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 02:57:30.827 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 02:57:30.827 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:57:30.828 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 02:57:30.830 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 02:57:30.830 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:57:30.831 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 02:57:30.832 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 2
+2021-10-01 02:57:30.832 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:57:30.834 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 02:57:30.834 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 02:57:30.835 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:57:30.836 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:57:30.836 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 02:57:30.836 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2021-10-01 02:57:30.837 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：2
+2021-10-01 02:57:30.837 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 02:57:30.844 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"}],"total":2},"success":true}
+2021-10-01 02:57:30.844 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2021-10-01 02:57:52.367 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:57:52.368 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/save POST
+2021-10-01 02:57:52.368 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.save
+2021-10-01 02:57:52.368 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:57:52.369 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test222","name":"2345"}]
+2021-10-01 02:57:52.372 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 02:57:52.373 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test222(String)
+2021-10-01 02:57:52.374 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 0
+2021-10-01 02:57:52.375 DEBUG com.jiawa.wiki.mapper.UserMapper.insert           :137  [32m                  [0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?)
+2021-10-01 02:57:52.376 DEBUG com.jiawa.wiki.mapper.UserMapper.insert           :137  [32m                  [0;39m ==> Parameters: 98855854538887168(Long), test222(String), 2345(String), f447e722c5cf2b7ff7b0656fcfa4d57c(String)
+2021-10-01 02:57:52.462 DEBUG com.jiawa.wiki.mapper.UserMapper.insert           :137  [32m                  [0;39m <==    Updates: 1
+2021-10-01 02:57:52.463 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"success":true}
+2021-10-01 02:57:52.463 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：96 ms -------------
+2021-10-01 02:57:52.483 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:57:52.483 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 02:57:52.484 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 02:57:52.484 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:57:52.484 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 02:57:52.485 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 02:57:52.485 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 02:57:52.487 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 02:57:52.487 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-10-01 02:57:52.487 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:57:52.488 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 02:57:52.488 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 02:57:52.489 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:57:52.490 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 02:57:52.490 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 02:57:52.490 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-01 02:57:52.491 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2021-10-01 02:57:52.491 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：3
+2021-10-01 02:57:52.491 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 02:57:52.492 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"},{"id":98855854538887168,"loginName":"test222","name":"2345"}],"total":3},"success":true}
+2021-10-01 02:57:52.492 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-10-01 02:58:06.321 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 02:58:06.321 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-01 02:58:06.322 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-01 02:58:06.322 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 02:58:06.322 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test222"}]
+2021-10-01 02:58:06.323 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 02:58:06.324 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test222(String)
+2021-10-01 02:58:06.325 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 02:58:06.325 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-01 02:58:06.326 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 02:58:06.331 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"id":98855854538887168,"loginName":"test222","name":"2345"},"success":true}
+2021-10-01 02:58:06.331 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-10-01 03:26:00.604 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=7m6s385ms926µs).
+2021-10-01 10:13:35.771 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 10:13:35.772 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 10:13:35.772 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 10:13:35.773 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 10:13:35.773 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 10:13:35.776 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b27e974 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.780 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1fed33f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.783 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@11f04abf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.786 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@25a87dbc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.788 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c72100c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.790 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3be24596 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.792 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@285455e7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.793 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ef788cc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.794 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1259136e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.796 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-7 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3bbe3a46 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-01 10:13:35.797 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 10:13:35.798 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 10:13:35.800 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 10:13:35.801 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-10-01 10:13:35.801 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 10:13:35.802 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 10:13:35.803 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 10:13:35.804 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 10:13:35.804 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 10:13:35.805 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 10:13:35.805 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-01 10:13:35.806 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2021-10-01 10:13:35.806 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：3
+2021-10-01 10:13:35.807 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 10:13:35.814 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"},{"id":98855854538887168,"loginName":"test222","name":"2345"}],"total":3},"success":true}
+2021-10-01 10:13:35.815 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
+2021-10-01 12:59:08.076 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=2h23m36s810ms610µs600ns).
+2021-10-01 18:20:18.986 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:18.988 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-7 - Shutdown initiated...
+2021-10-01 18:20:18.995 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-7 - Shutdown completed.
+2021-10-01 18:20:19.300 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-01 18:20:19.300 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-01 18:20:20.006 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-01 18:20:20.006 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-01 18:20:20.008 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-10-01 18:20:20.202 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-01 18:20:20.203 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:20.203 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-01 18:20:20.204 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-01 18:20:20.463 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-01 18:20:20.463 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1159 ms
+2021-10-01 18:20:20.818 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:21.173 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-01 18:20:21.186 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:21.190 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-01 18:20:21.194 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.95 seconds (JVM running for 92971.283)
+2021-10-01 18:20:21.196 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-10-01 18:20:21.197 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-01 18:20:21.197 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-01 18:20:22.846 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:23.032 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-01 18:20:23.033 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-01 18:20:23.229 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-01 18:20:23.229 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-01 18:20:23.231 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-10-01 18:20:23.361 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-01 18:20:23.362 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:23.362 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-01 18:20:23.362 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-01 18:20:23.384 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-01 18:20:23.384 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 348 ms
+2021-10-01 18:20:23.726 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:23.989 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-01 18:20:24.005 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:24.009 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-01 18:20:24.014 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.024 seconds (JVM running for 92974.104)
+2021-10-01 18:20:24.016 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-10-01 18:20:24.017 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-01 18:20:24.017 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-01 18:20:25.640 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:25.814 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 143164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-01 18:20:25.817 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-01 18:20:26.153 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-01 18:20:26.153 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-01 18:20:26.156 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-10-01 18:20:26.306 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-01 18:20:26.307 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:26.307 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-01 18:20:26.307 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-01 18:20:26.325 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-01 18:20:26.325 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 501 ms
+2021-10-01 18:20:26.679 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-01 18:20:26.973 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-01 18:20:26.984 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-01 18:20:26.987 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-01 18:20:26.991 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.222 seconds (JVM running for 92977.08)
+2021-10-01 18:20:26.992 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-10-01 18:20:26.993 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-01 18:20:26.993 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-01 19:48:17.604 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-01 19:48:17.605 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-01 19:48:17.606 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-10-01 19:48:17.624 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 19:48:17.624 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-10-01 19:48:17.624 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.list
+2021-10-01 19:48:17.624 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 19:48:17.626 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-10-01 19:48:17.632 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-8 - Starting...
+2021-10-01 19:48:17.641 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-8 - Start completed.
+2021-10-01 19:48:17.644 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-10-01 19:48:17.645 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2021-10-01 19:48:17.647 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2021-10-01 19:48:17.648 TRACE c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2021-10-01 19:48:17.649 DEBUG c.j.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 19:48:17.651 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-10-01 19:48:17.652 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-10-01 19:48:17.653 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 19:48:17.654 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 19:48:17.655 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98750725051518976, test123, 111222, cc03e747a6afbbcbf8be7668acfebee5
+2021-10-01 19:48:17.655 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-01 19:48:17.656 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2021-10-01 19:48:17.657 INFO  com.jiawa.wiki.service.UserService                :49   [32m                  [0;39m 总行数：3
+2021-10-01 19:48:17.657 INFO  com.jiawa.wiki.service.UserService                :50   [32m                  [0;39m 总页数：1
+2021-10-01 19:48:17.664 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":98750725051518976,"loginName":"test123","name":"111222"},{"id":98855854538887168,"loginName":"test222","name":"2345"}],"total":3},"success":true}
+2021-10-01 19:48:17.665 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
+2021-10-01 19:48:20.141 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 19:48:20.141 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-01 19:48:20.141 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-01 19:48:20.141 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 19:48:20.142 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-10-01 19:48:20.144 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 19:48:20.145 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-10-01 19:48:20.145 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 19:48:20.146 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, test, 测试, f61d2e9c32d20dd048574846624487ba
+2021-10-01 19:48:20.146 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 19:48:20.146 INFO  com.jiawa.wiki.service.UserService                :135  [32m                  [0;39m 密码不对, 输入密码：e70e2222a9d67c4f2eae107533359aa4, 数据库密码：f61d2e9c32d20dd048574846624487ba
+2021-10-01 19:48:20.147 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m                  [0;39m 业务异常：用户名不存在或密码错误
+2021-10-01 19:48:20.148 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 用户名不存在或密码错误]
+2021-10-01 19:48:29.884 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 19:48:29.884 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-01 19:48:29.885 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-01 19:48:29.885 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 19:48:29.885 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test234"}]
+2021-10-01 19:48:29.886 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 19:48:29.887 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test234(String)
+2021-10-01 19:48:29.888 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 0
+2021-10-01 19:48:29.889 INFO  com.jiawa.wiki.service.UserService                :126  [32m                  [0;39m 用户名不存在, test234
+2021-10-01 19:48:29.889 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m                  [0;39m 业务异常：用户名不存在或密码错误
+2021-10-01 19:48:29.890 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 用户名不存在或密码错误]
+2021-10-01 19:49:21.058 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-01 19:49:21.059 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-01 19:49:21.059 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-01 19:49:21.059 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-01 19:49:21.059 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test222"}]
+2021-10-01 19:49:21.060 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-01 19:49:21.061 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test222(String)
+2021-10-01 19:49:21.062 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-01 19:49:21.063 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-01 19:49:21.063 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-01 19:49:21.067 INFO  com.jiawa.wiki.controller.UserController          :78   [32m                  [0;39m 生成单点登录token：99110401362497536，并放入redis中
+2021-10-01 19:49:22.006 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"id":98855854538887168,"loginName":"test222","name":"2345","token":"99110401362497536"},"success":true}
+2021-10-01 19:49:22.007 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：949 ms -------------
