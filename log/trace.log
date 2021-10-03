@@ -284,3 +284,347 @@
 2021-10-03 01:48:19.089 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
 2021-10-03 01:48:19.091 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2021-10-03 01:48:19.109 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-10-03 01:48:27.614 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2021-10-03 01:48:27.638 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 165164 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-03 01:48:27.638 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-03 01:48:27.689 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-03 01:48:27.689 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-03 01:48:29.127 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-03 01:48:29.132 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-03 01:48:29.161 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2021-10-03 01:48:30.129 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-03 01:48:30.141 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-03 01:48:30.142 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-03 01:48:30.143 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-03 01:48:30.293 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-03 01:48:30.294 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2604 ms
+2021-10-03 01:48:31.418 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-03 01:48:31.892 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-03 01:48:31.911 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-03 01:48:31.935 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-03 01:48:31.952 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 4.831 seconds (JVM running for 6.74)
+2021-10-03 01:48:31.962 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2021-10-03 01:48:31.965 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-03 01:49:02.985 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-03 01:49:02.986 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-03 01:49:02.987 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-10-03 01:49:03.023 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:49:03.024 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 01:49:03.025 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 01:49:03.025 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:49:03.070 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 01:49:03.117 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-10-03 01:49:03.668 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-10-03 01:49:03.675 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 01:49:03.697 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 01:49:03.717 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 01:49:03.718 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 01:49:03.719 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 01:49:03.720 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 01:49:03.720 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 01:49:03.720 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 01:49:03.720 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 01:49:03.721 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 01:49:03.721 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 01:49:03.722 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 01:49:03.722 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 01:49:03.723 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 01:49:03.723 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 01:49:03.723 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 01:49:03.724 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 01:49:03.724 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 01:49:03.725 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 01:49:03.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 01:49:03.761 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：739 ms -------------
+2021-10-03 01:49:09.239 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:49:09.239 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-03 01:49:09.240 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-03 01:49:09.240 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:49:09.242 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test222"}]
+2021-10-03 01:49:09.258 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-03 01:49:09.259 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test222(String)
+2021-10-03 01:49:09.262 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-03 01:49:09.263 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-03 01:49:09.263 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-03 01:49:09.268 INFO  com.jiawa.wiki.controller.UserController          :78   [32m                  [0;39m 生成单点登录token：99563336705904640，并放入redis中
+2021-10-03 01:49:10.262 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"id":98855854538887168,"loginName":"test222","name":"2345","token":"99563336705904640"},"success":true}
+2021-10-03 01:49:10.263 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：1024 ms -------------
+2021-10-03 01:49:14.054 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 01:49:14.056 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：1 ms -------------
+2021-10-03 01:49:14.063 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 01:49:14.063 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/logout/99563336705904640
+2021-10-03 01:49:14.063 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：99563336705904640
+2021-10-03 01:49:14.107 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":98855854538887168,"loginName":"test222","name":"2345","token":"99563336705904640"}
+2021-10-03 01:49:14.114 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:49:14.115 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/logout/99563336705904640 GET
+2021-10-03 01:49:14.115 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.logout
+2021-10-03 01:49:14.115 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:49:14.115 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: ["99563336705904640"]
+2021-10-03 01:49:14.159 INFO  com.jiawa.wiki.controller.UserController          :90   [32m                  [0;39m 从redis中删除token: 99563336705904640
+2021-10-03 01:49:14.159 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"success":true}
+2021-10-03 01:49:14.159 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2021-10-03 01:49:14.160 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：97 ms -------------
+2021-10-03 01:51:59.377 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:51:59.378 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 01:51:59.378 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 01:51:59.378 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:51:59.378 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 01:51:59.389 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4eb81c58 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.393 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4dd8d8eb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.396 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@438c47d4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.400 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e5e7f85 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.405 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9a9394a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.408 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2bdb714 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.411 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23aef270 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.413 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1e3103d7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.416 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e920a32 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.419 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31f803e3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:51:59.419 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 01:51:59.420 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 01:51:59.423 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 01:51:59.423 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 01:51:59.425 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 01:51:59.426 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 01:51:59.426 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 01:51:59.427 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 01:51:59.427 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 01:51:59.428 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 01:51:59.428 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 01:51:59.428 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 01:51:59.429 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 01:51:59.429 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 01:51:59.430 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 01:51:59.430 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 01:51:59.431 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 01:51:59.431 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 01:51:59.432 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 01:51:59.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 01:51:59.435 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：58 ms -------------
+2021-10-03 01:54:52.738 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:54:52.739 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 01:54:52.739 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 01:54:52.739 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:54:52.740 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 01:54:52.742 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@705df0e7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.746 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7aa59b97 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.749 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fa71aa7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.752 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20620f7c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.755 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ed2e51c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.759 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f88e5e8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.765 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fa1088a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.770 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7642ea67 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.773 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@43f944e3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.778 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5bc65ed1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 01:54:52.779 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 01:54:52.779 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 01:54:52.782 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 01:54:52.782 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 01:54:52.783 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 01:54:52.784 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 01:54:52.784 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 01:54:52.785 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 01:54:52.786 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 01:54:52.787 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 01:54:52.787 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 01:54:52.788 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 01:54:52.788 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 01:54:52.789 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 01:54:52.789 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 01:54:52.789 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 01:54:52.790 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 01:54:52.790 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 01:54:52.791 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 01:54:52.792 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 01:54:52.793 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：55 ms -------------
+2021-10-03 01:55:46.047 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:55:46.047 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 01:55:46.048 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 01:55:46.048 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:55:46.048 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 01:55:46.050 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 01:55:46.051 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 01:55:46.053 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 01:55:46.054 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 01:55:46.055 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 01:55:46.056 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 01:55:46.057 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 01:55:46.057 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 01:55:46.058 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 01:55:46.059 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 01:55:46.060 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 01:55:46.061 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 01:55:46.062 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 01:55:46.063 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 01:55:46.064 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 01:55:46.065 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 01:55:46.066 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 01:55:46.067 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 01:55:46.068 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 01:55:46.070 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 01:55:46.071 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：24 ms -------------
+2021-10-03 01:55:48.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:55:48.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-03 01:55:48.233 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-03 01:55:48.234 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:55:48.234 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: [{"loginName":"test222"}]
+2021-10-03 01:55:48.236 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-03 01:55:48.237 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: test222(String)
+2021-10-03 01:55:48.239 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-10-03 01:55:48.239 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 98855854538887168, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-03 01:55:48.240 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2021-10-03 01:55:48.241 INFO  com.jiawa.wiki.controller.UserController          :78   [32m                  [0;39m 生成单点登录token：99565010119954432，并放入redis中
+2021-10-03 01:55:48.283 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":{"id":98855854538887168,"loginName":"test222","name":"2345","token":"99565010119954432"},"success":true}
+2021-10-03 01:55:48.284 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：51 ms -------------
+2021-10-03 01:55:51.774 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 01:55:51.775 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-10-03 01:55:51.778 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 01:55:51.779 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/logout/99565010119954432
+2021-10-03 01:55:51.779 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：99565010119954432
+2021-10-03 01:55:51.825 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":98855854538887168,"loginName":"test222","name":"2345","token":"99565010119954432"}
+2021-10-03 01:55:51.826 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 01:55:51.826 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/logout/99565010119954432 GET
+2021-10-03 01:55:51.826 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.UserController.logout
+2021-10-03 01:55:51.826 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 01:55:51.827 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: ["99565010119954432"]
+2021-10-03 01:55:51.868 INFO  com.jiawa.wiki.controller.UserController          :90   [32m                  [0;39m 从redis中删除token: 99565010119954432
+2021-10-03 01:55:51.869 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"success":true}
+2021-10-03 01:55:51.869 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
+2021-10-03 01:55:51.870 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：91 ms -------------
+2021-10-03 01:58:23.405 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 01:58:23.406 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 01:58:23.406 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 01:58:23.406 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:01:57.112 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:01:57.112 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:01:57.113 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:01:57.113 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:02:19.890 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:02:19.890 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:02:19.891 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:02:19.891 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:02:31.688 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:02:31.689 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:02:31.689 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:02:31.690 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:02:56.463 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:02:56.463 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:02:56.463 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:02:56.463 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:03:15.107 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:03:15.107 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:03:15.107 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:03:15.108 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:04:07.865 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:04:07.865 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:04:07.866 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:04:07.866 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:04:33.127 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:04:33.128 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:04:33.128 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:04:33.128 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:05:01.154 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:05:01.155 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:05:01.155 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:05:01.156 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:05:12.149 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-10-03 02:05:12.150 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2021-10-03 02:05:12.150 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2021-10-03 02:05:12.150 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2021-10-03 02:10:18.903 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 02:10:18.904 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 02:10:18.904 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 02:10:18.904 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 02:10:18.905 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 02:10:18.908 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@441bae10 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.910 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3cbcd369 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.912 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@67747648 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.915 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e062f98 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.918 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d45ba5e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.921 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27b81904 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.924 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@633aed8d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.926 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c8f749d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.929 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7cc8bc18 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.932 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b5ffabc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:10:18.935 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 02:10:18.935 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 02:10:18.938 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 02:10:18.939 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 02:10:18.940 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 02:10:18.941 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 02:10:18.942 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 02:10:18.945 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 02:10:18.947 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 02:10:18.948 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 02:10:18.949 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 02:10:18.950 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 02:10:18.951 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 02:10:18.951 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 02:10:18.952 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 02:10:18.952 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 02:10:18.953 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 02:10:18.953 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 02:10:18.953 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 02:10:18.955 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 02:10:18.955 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：52 ms -------------
+2021-10-03 02:14:14.975 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 02:14:14.976 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 02:14:14.976 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 02:14:14.976 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 02:14:14.977 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 02:14:14.979 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@79c193d5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:14.982 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@30d0943a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:14.985 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ee4979a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:14.988 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b4ef4a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:14.991 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@120b291f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:14.996 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@264e1e20 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:15.005 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c0c0534 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:15.008 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b5da9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:15.012 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b53df6c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:15.016 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1dba6738 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-03 02:14:15.016 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 02:14:15.017 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 02:14:15.021 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 02:14:15.021 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 02:14:15.022 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 02:14:15.022 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 02:14:15.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 02:14:15.023 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 02:14:15.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 02:14:15.024 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 02:14:15.025 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 02:14:15.025 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 02:14:15.025 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 02:14:15.026 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 02:14:15.026 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 02:14:15.027 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 02:14:15.028 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 02:14:15.028 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 02:14:15.029 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 02:14:15.030 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 02:14:15.031 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：56 ms -------------
+2021-10-03 02:14:58.429 INFO  com.jiawa.wiki.aspect.LogAspect                   :40   [32m                  [0;39m ------------- 开始 -------------
+2021-10-03 02:14:58.429 INFO  com.jiawa.wiki.aspect.LogAspect                   :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-03 02:14:58.430 INFO  com.jiawa.wiki.aspect.LogAspect                   :42   [32m                  [0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-03 02:14:58.430 INFO  com.jiawa.wiki.aspect.LogAspect                   :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-10-03 02:14:58.430 INFO  com.jiawa.wiki.aspect.LogAspect                   :63   [32m                  [0;39m 请求参数: []
+2021-10-03 02:14:58.433 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-03 02:14:58.434 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2021-10-03 02:14:58.435 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-10-03 02:14:58.436 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-03 02:14:58.437 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-10-03 02:14:58.437 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-03 02:14:58.438 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-10-03 02:14:58.439 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-03 02:14:58.439 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-03 02:14:58.440 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-10-03 02:14:58.441 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-03 02:14:58.442 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-03 02:14:58.442 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-03 02:14:58.443 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-03 02:14:58.444 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-10-03 02:14:58.445 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-03 02:14:58.445 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-03 02:14:58.446 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-03 02:14:58.447 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 15
+2021-10-03 02:14:58.448 INFO  com.jiawa.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-03 02:14:58.449 INFO  com.jiawa.wiki.aspect.LogAspect                   :76   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
