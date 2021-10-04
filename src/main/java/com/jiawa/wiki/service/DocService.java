@@ -44,7 +44,7 @@ public class DocService {
     private SnowFlake snowFlake;
 
     @Resource
-    private RedisUtil redisUtil;
+    public RedisUtil redisUtil;
 
     public List<DocQueryResp> all(Long ebookId) {
         DocExample docExample = new DocExample();
@@ -127,11 +127,11 @@ public class DocService {
 
     public String findContent(Long id) {
         Content content = contentMapper.selectByPrimaryKey(id);
-        //文档阅读数+1
+        // 文档阅读数+1
         docMapperCust.increaseViewCount(id);
-        if(ObjectUtils.isEmpty(content)){
+        if (ObjectUtils.isEmpty(content)) {
             return "";
-        }else{
+        } else {
             return content.getContent();
         }
     }
