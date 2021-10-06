@@ -1104,3 +1104,338 @@ Caused by: java.lang.NumberFormatException: For input string: "undefined"
 2021-10-06 11:26:43.875 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100795847175966720[0;39m key已存在：DOC_VOTE_1_127.0.0.1
 2021-10-06 11:26:43.879 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100795847175966720[0;39m 业务异常：您已点赞过
 2021-10-06 11:26:43.881 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100795847175966720[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2021-10-06 18:39:09.411 INFO  com.jiawa.wiki.websocket.WebSocketServer          :41   [32m                  [0;39m 连接关闭，token：TrODBWdgbf，session id：0！当前连接数：0
+2021-10-06 18:39:10.596 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m                  [0;39m 有新连接：token：AT7TsRBHll，session id：1，当前连接数：1
+2021-10-06 18:39:10.683 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100904681060044800[0;39m ------------- 开始 -------------
+2021-10-06 18:39:10.685 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100904681060044800[0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-10-06 18:39:10.686 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100904681060044800[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2021-10-06 18:39:10.686 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100904681060044800[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:39:10.688 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100904681060044800[0;39m 请求参数: [1]
+2021-10-06 18:39:10.711 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56c5d7f6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.714 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5268bb07 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.717 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a1d4c4c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.720 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@329f589e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.724 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@427521ef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.726 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55d21a25 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.728 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@750d43ff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.731 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3d1eae68 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.733 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@568f9a7d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.737 WARN  com.zaxxer.hikari.pool.PoolBase                   :184  [32m100904681060044800[0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1349a1bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-10-06 18:39:10.740 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100904681060044800[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-10-06 18:39:10.742 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100904681060044800[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:39:10.747 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-10-06 18:39:10.748 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 1, 1, 0, 文档1, 1, 54, 53
+2021-10-06 18:39:10.749 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 2, 0
+2021-10-06 18:39:10.749 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 3, 0
+2021-10-06 18:39:10.750 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 2, 0
+2021-10-06 18:39:10.751 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 98418415127105536, 1, 0, test, 1, 1, 1
+2021-10-06 18:39:10.751 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 3, 1, 0, 文档2, 2, 1, 0
+2021-10-06 18:39:10.752 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 2, 0
+2021-10-06 18:39:10.753 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100904681060044800[0;39m <==        Row: 99818989638782976, 1, 0, test1, 2, 1, 1
+2021-10-06 18:39:10.758 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100904681060044800[0;39m <==      Total: 8
+2021-10-06 18:39:10.764 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100904681060044800[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":54,"voteCount":53},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":3,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":98418415127105536,"name":"test","parent":0,"sort":1,"viewCount":1,"voteCount":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":1,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":2,"voteCount":0},{"ebookId":1,"id":99818989638782976,"name":"test1","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2021-10-06 18:39:10.764 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100904681060044800[0;39m ------------- 结束 耗时：81 ms -------------
+2021-10-06 18:39:10.807 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100904681580138496[0;39m ------------- 开始 -------------
+2021-10-06 18:39:10.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100904681580138496[0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/1 GET
+2021-10-06 18:39:10.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100904681580138496[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2021-10-06 18:39:10.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100904681580138496[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:39:10.808 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100904681580138496[0;39m 请求参数: [1]
+2021-10-06 18:39:10.809 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100904681580138496[0;39m ==>  Preparing: select id , content from content where id = ?
+2021-10-06 18:39:10.810 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100904681580138496[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:39:10.812 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100904681580138496[0;39m <==    Columns: id, content
+2021-10-06 18:39:10.813 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100904681580138496[0;39m <==        Row: 1, <<BLOB>>
+2021-10-06 18:39:10.813 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100904681580138496[0;39m <==      Total: 1
+2021-10-06 18:39:10.814 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100904681580138496[0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-10-06 18:39:10.815 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100904681580138496[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:39:10.845 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100904681580138496[0;39m <==    Updates: 1
+2021-10-06 18:39:10.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100904681580138496[0;39m 返回结果: {"content":"https://2x.antdv.com/components/tree-select-cn","success":true}
+2021-10-06 18:39:10.846 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100904681580138496[0;39m ------------- 结束 耗时：39 ms -------------
+2021-10-06 18:39:14.872 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100904698629984256[0;39m ------------- 开始 -------------
+2021-10-06 18:39:14.872 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100904698629984256[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-10-06 18:39:14.873 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100904698629984256[0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2021-10-06 18:39:14.873 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100904698629984256[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:39:14.878 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100904698629984256[0;39m 请求参数: [{"loginName":"test222"}]
+2021-10-06 18:39:14.926 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m100904698629984256[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-10-06 18:39:14.927 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m100904698629984256[0;39m ==> Parameters: test222(String)
+2021-10-06 18:39:14.930 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m100904698629984256[0;39m <==    Columns: id, login_name, name, password
+2021-10-06 18:39:14.930 TRACE com.jiawa.wiki.mapper.UserMapper.selectByExample  :143  [32m100904698629984256[0;39m <==        Row: 99690661170778112, test222, 2345, f447e722c5cf2b7ff7b0656fcfa4d57c
+2021-10-06 18:39:14.931 DEBUG com.jiawa.wiki.mapper.UserMapper.selectByExample  :137  [32m100904698629984256[0;39m <==      Total: 1
+2021-10-06 18:39:14.941 INFO  com.jiawa.wiki.controller.UserController          :78   [32m100904698629984256[0;39m 生成单点登录token：100904698919391232，并放入redis中
+2021-10-06 18:39:15.006 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100904698629984256[0;39m 返回结果: {"content":{"id":99690661170778112,"loginName":"test222","name":"2345","token":"100904698919391232"},"success":true}
+2021-10-06 18:39:15.007 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100904698629984256[0;39m ------------- 结束 耗时：135 ms -------------
+2021-10-06 18:39:16.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100904704090968064[0;39m ------------- 开始 -------------
+2021-10-06 18:39:16.175 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100904704090968064[0;39m 请求地址: http://127.0.0.1:8880/doc/vote/1 GET
+2021-10-06 18:39:16.176 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100904704090968064[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2021-10-06 18:39:16.177 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100904704090968064[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:39:16.177 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100904704090968064[0;39m 请求参数: [1]
+2021-10-06 18:39:16.225 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100904704090968064[0;39m key已存在：DOC_VOTE_1_127.0.0.1
+2021-10-06 18:39:16.228 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100904704090968064[0;39m 业务异常：您已点赞过
+2021-10-06 18:39:16.230 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100904704090968064[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2021-10-06 18:57:35.921 INFO  com.jiawa.wiki.websocket.WebSocketServer          :41   [32m                  [0;39m 连接关闭，token：AT7TsRBHll，session id：1！当前连接数：0
+2021-10-06 18:57:35.979 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-06 18:57:35.984 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-10-06 18:57:36.072 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-10-06 18:57:52.667 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2021-10-06 18:57:52.678 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_162 on LAPTOP-0SOBOL5D with PID 15912 (D:\Soft\javaStudy\wiki12\target\classes started by apple in D:\Soft\javaStudy\wiki12)
+2021-10-06 18:57:52.679 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-10-06 18:57:52.741 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-06 18:57:52.741 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-06 18:57:54.302 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-10-06 18:57:54.306 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-10-06 18:57:54.336 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-10-06 18:57:54.656 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$1ed01c9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:54.670 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.083 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.085 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'jacksonConfig' of type [com.jiawa.wiki.config.JacksonConfig$$EnhancerBySpringCGLIB$$c10a91a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.087 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.089 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.093 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.094 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.097 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.100 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.101 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.132 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.134 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.141 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.146 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:55.179 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:56.170 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:56.172 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350  [32m                  [0;39m Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-06 18:57:56.807 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-10-06 18:57:56.818 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-10-06 18:57:56.819 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-10-06 18:57:56.819 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-10-06 18:57:56.931 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-06 18:57:56.931 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 4189 ms
+2021-10-06 18:57:58.246 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-06 18:57:58.905 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-10-06 18:57:59.407 INFO  o.a.r.s.support.DefaultRocketMQListenerContainer  :243  [32m                  [0;39m running container: DefaultRocketMQListenerContainer{consumerGroup='default', nameServer='127.0.0.1:9876', topic='VOTE_TOPIC', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-10-06 18:57:59.408 INFO  o.a.r.s.a.ListenerContainerConfiguration          :107  [32m                  [0;39m Register the listener to container, listenerBeanName:voteTopicConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2021-10-06 18:57:59.427 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-10-06 18:57:59.448 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-10-06 18:57:59.465 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 7.39 seconds (JVM running for 8.586)
+2021-10-06 18:57:59.469 INFO  com.jiawa.wiki.config.WikiApplication             :26   [32m                  [0;39m 启动成功！！
+2021-10-06 18:57:59.469 INFO  com.jiawa.wiki.config.WikiApplication             :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-10-06 18:58:06.293 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-06 18:58:06.293 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-06 18:58:06.296 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2021-10-06 18:58:06.368 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m                  [0;39m 有新连接：token：mpZeCp4GFv，session id：0，当前连接数：1
+2021-10-06 18:58:06.380 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909444510126080[0;39m ------------- 开始 -------------
+2021-10-06 18:58:06.382 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909444510126080[0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-10-06 18:58:06.382 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909444510126080[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2021-10-06 18:58:06.383 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909444510126080[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:06.386 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909444510126080[0;39m 请求参数: [1]
+2021-10-06 18:58:06.470 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m100909444510126080[0;39m HikariPool-1 - Starting...
+2021-10-06 18:58:06.559 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909445269295104[0;39m ------------- 开始 -------------
+2021-10-06 18:58:06.559 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909445269295104[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-10-06 18:58:06.559 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909445269295104[0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2021-10-06 18:58:06.560 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909445269295104[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:06.561 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909445269295104[0;39m 请求参数: []
+2021-10-06 18:58:07.050 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m100909444510126080[0;39m HikariPool-1 - Start completed.
+2021-10-06 18:58:07.237 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909444510126080[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-10-06 18:58:07.242 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m100909445269295104[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-10-06 18:58:07.275 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m100909445269295104[0;39m ==> Parameters: 
+2021-10-06 18:58:07.275 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909444510126080[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:07.303 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==    Columns: id, parent, name, sort
+2021-10-06 18:58:07.303 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-10-06 18:58:07.304 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 1, 1, 0, 文档1, 1, 55, 53
+2021-10-06 18:58:07.304 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 100, 0, 前端开发, 100
+2021-10-06 18:58:07.306 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 2, 0
+2021-10-06 18:58:07.306 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 101, 100, Vue, 101
+2021-10-06 18:58:07.307 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 3, 0
+2021-10-06 18:58:07.307 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-10-06 18:58:07.308 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 2, 0
+2021-10-06 18:58:07.308 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 200, 0, Java, 200
+2021-10-06 18:58:07.309 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 98418415127105536, 1, 0, test, 1, 1, 1
+2021-10-06 18:58:07.309 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 201, 200, 基础应用, 201
+2021-10-06 18:58:07.310 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 3, 1, 0, 文档2, 2, 1, 0
+2021-10-06 18:58:07.312 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 2, 0
+2021-10-06 18:58:07.311 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 202, 200, 框架应用, 202
+2021-10-06 18:58:07.313 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909444510126080[0;39m <==        Row: 99818989638782976, 1, 0, test1, 2, 1, 1
+2021-10-06 18:58:07.313 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 300, 0, Python, 300
+2021-10-06 18:58:07.314 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909444510126080[0;39m <==      Total: 8
+2021-10-06 18:58:07.315 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 301, 300, 基础应用, 301
+2021-10-06 18:58:07.318 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-10-06 18:58:07.319 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 400, 0, 数据库, 400
+2021-10-06 18:58:07.319 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 401, 400, MySQL, 401
+2021-10-06 18:58:07.320 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 500, 0, 其它, 500
+2021-10-06 18:58:07.321 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 501, 500, 服务器, 501
+2021-10-06 18:58:07.322 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 502, 500, 开发工具, 502
+2021-10-06 18:58:07.322 TRACE c.jiawa.wiki.mapper.CategoryMapper.selectByExample:143  [32m100909445269295104[0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-10-06 18:58:07.323 DEBUG c.jiawa.wiki.mapper.CategoryMapper.selectByExample:137  [32m100909445269295104[0;39m <==      Total: 15
+2021-10-06 18:58:07.340 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909444510126080[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":55,"voteCount":53},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":3,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":98418415127105536,"name":"test","parent":0,"sort":1,"viewCount":1,"voteCount":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":1,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":2,"voteCount":0},{"ebookId":1,"id":99818989638782976,"name":"test1","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2021-10-06 18:58:07.340 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909445269295104[0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-10-06 18:58:07.341 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909444510126080[0;39m ------------- 结束 耗时：963 ms -------------
+2021-10-06 18:58:07.341 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909445269295104[0;39m ------------- 结束 耗时：783 ms -------------
+2021-10-06 18:58:07.440 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909448964476928[0;39m ------------- 开始 -------------
+2021-10-06 18:58:07.440 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909448964476928[0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/1 GET
+2021-10-06 18:58:07.440 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909448964476928[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2021-10-06 18:58:07.440 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909448964476928[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:07.441 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909448964476928[0;39m 请求参数: [1]
+2021-10-06 18:58:07.442 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909448964476928[0;39m ==>  Preparing: select id , content from content where id = ?
+2021-10-06 18:58:07.443 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909448964476928[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:07.448 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909448964476928[0;39m <==    Columns: id, content
+2021-10-06 18:58:07.448 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909448964476928[0;39m <==        Row: 1, <<BLOB>>
+2021-10-06 18:58:07.449 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909448964476928[0;39m <==      Total: 1
+2021-10-06 18:58:07.451 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909448964476928[0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-10-06 18:58:07.452 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909448964476928[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:07.467 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909448964476928[0;39m <==    Updates: 1
+2021-10-06 18:58:07.468 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909448964476928[0;39m 返回结果: {"content":"https://2x.antdv.com/components/tree-select-cn","success":true}
+2021-10-06 18:58:07.469 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909448964476928[0;39m ------------- 结束 耗时：29 ms -------------
+2021-10-06 18:58:12.494 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909470162489344[0;39m ------------- 开始 -------------
+2021-10-06 18:58:12.495 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909470162489344[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-10-06 18:58:12.495 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909470162489344[0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2021-10-06 18:58:12.496 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909470162489344[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:12.499 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909470162489344[0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-10-06 18:58:12.545 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m100909470162489344[0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-10-06 18:58:12.546 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m100909470162489344[0;39m ==> Parameters: 101(Long)
+2021-10-06 18:58:12.548 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m100909470162489344[0;39m <==    Columns: count(0)
+2021-10-06 18:58:12.548 TRACE c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m100909470162489344[0;39m <==        Row: 1
+2021-10-06 18:58:12.549 DEBUG c.j.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m100909470162489344[0;39m <==      Total: 1
+2021-10-06 18:58:12.551 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m100909470162489344[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-10-06 18:58:12.552 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m100909470162489344[0;39m ==> Parameters: 101(Long), 1000(Integer)
+2021-10-06 18:58:12.553 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m100909470162489344[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-10-06 18:58:12.554 TRACE com.jiawa.wiki.mapper.EbookMapper.selectByExample :143  [32m100909470162489344[0;39m <==        Row: 1, Spring Boot 入门教程, 101, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 1, 1
+2021-10-06 18:58:12.555 DEBUG com.jiawa.wiki.mapper.EbookMapper.selectByExample :137  [32m100909470162489344[0;39m <==      Total: 1
+2021-10-06 18:58:12.557 INFO  com.jiawa.wiki.service.EbookService               :46   [32m100909470162489344[0;39m 总行数：1
+2021-10-06 18:58:12.557 INFO  com.jiawa.wiki.service.EbookService               :47   [32m100909470162489344[0;39m 总页数：1
+2021-10-06 18:58:12.570 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909470162489344[0;39m 返回结果: {"content":{"list":[{"category1Id":101,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":1,"id":1,"name":"Spring Boot 入门教程","viewCount":1,"voteCount":1}],"total":1},"success":true}
+2021-10-06 18:58:12.571 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909470162489344[0;39m ------------- 结束 耗时：77 ms -------------
+2021-10-06 18:58:14.118 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909476974039040[0;39m ------------- 开始 -------------
+2021-10-06 18:58:14.119 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909476974039040[0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-10-06 18:58:14.120 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909476974039040[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2021-10-06 18:58:14.120 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909476974039040[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:14.121 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909476974039040[0;39m 请求参数: [1]
+2021-10-06 18:58:14.124 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909476974039040[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-10-06 18:58:14.126 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909476974039040[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:14.128 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-10-06 18:58:14.129 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 1, 1, 0, 文档1, 1, 56, 53
+2021-10-06 18:58:14.130 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 2, 0
+2021-10-06 18:58:14.131 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 3, 0
+2021-10-06 18:58:14.132 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 2, 0
+2021-10-06 18:58:14.133 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 98418415127105536, 1, 0, test, 1, 1, 1
+2021-10-06 18:58:14.134 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 3, 1, 0, 文档2, 2, 1, 0
+2021-10-06 18:58:14.135 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 2, 0
+2021-10-06 18:58:14.135 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909476974039040[0;39m <==        Row: 99818989638782976, 1, 0, test1, 2, 1, 1
+2021-10-06 18:58:14.139 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909476974039040[0;39m <==      Total: 8
+2021-10-06 18:58:14.145 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909476974039040[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":56,"voteCount":53},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":3,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":98418415127105536,"name":"test","parent":0,"sort":1,"viewCount":1,"voteCount":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":1,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":2,"voteCount":0},{"ebookId":1,"id":99818989638782976,"name":"test1","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2021-10-06 18:58:14.145 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909476974039040[0;39m ------------- 结束 耗时：27 ms -------------
+2021-10-06 18:58:14.173 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909477204725760[0;39m ------------- 开始 -------------
+2021-10-06 18:58:14.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909477204725760[0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/1 GET
+2021-10-06 18:58:14.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909477204725760[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2021-10-06 18:58:14.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909477204725760[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:14.174 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909477204725760[0;39m 请求参数: [1]
+2021-10-06 18:58:14.175 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909477204725760[0;39m ==>  Preparing: select id , content from content where id = ?
+2021-10-06 18:58:14.176 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909477204725760[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:14.177 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909477204725760[0;39m <==    Columns: id, content
+2021-10-06 18:58:14.178 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909477204725760[0;39m <==        Row: 1, <<BLOB>>
+2021-10-06 18:58:14.179 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909477204725760[0;39m <==      Total: 1
+2021-10-06 18:58:14.180 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909477204725760[0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-10-06 18:58:14.181 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909477204725760[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:14.204 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909477204725760[0;39m <==    Updates: 1
+2021-10-06 18:58:14.204 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909477204725760[0;39m 返回结果: {"content":"https://2x.antdv.com/components/tree-select-cn","success":true}
+2021-10-06 18:58:14.205 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909477204725760[0;39m ------------- 结束 耗时：32 ms -------------
+2021-10-06 18:58:15.480 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909482686681088[0;39m ------------- 开始 -------------
+2021-10-06 18:58:15.481 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909482686681088[0;39m 请求地址: http://127.0.0.1:8880/doc/vote/1 GET
+2021-10-06 18:58:15.482 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909482686681088[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2021-10-06 18:58:15.482 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909482686681088[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:15.483 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909482686681088[0;39m 请求参数: [1]
+2021-10-06 18:58:15.979 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100909482686681088[0;39m key已存在：DOC_VOTE_1_127.0.0.1
+2021-10-06 18:58:15.984 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100909482686681088[0;39m 业务异常：您已点赞过
+2021-10-06 18:58:15.987 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100909482686681088[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2021-10-06 18:58:18.367 INFO  com.jiawa.wiki.websocket.WebSocketServer          :41   [32m                  [0;39m 连接关闭，token：mpZeCp4GFv，session id：0！当前连接数：0
+2021-10-06 18:58:19.319 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m100909444510126080[0;39m 有新连接：token：1SCJ1ga983，session id：1，当前连接数：1
+2021-10-06 18:58:19.399 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909499124158464[0;39m ------------- 开始 -------------
+2021-10-06 18:58:19.400 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909499124158464[0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-10-06 18:58:19.400 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909499124158464[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2021-10-06 18:58:19.401 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909499124158464[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:19.401 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909499124158464[0;39m 请求参数: [1]
+2021-10-06 18:58:19.403 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909499124158464[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-10-06 18:58:19.404 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909499124158464[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:19.407 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-10-06 18:58:19.407 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 1, 1, 0, 文档1, 1, 57, 53
+2021-10-06 18:58:19.408 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 2, 0
+2021-10-06 18:58:19.409 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 3, 0
+2021-10-06 18:58:19.409 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 2, 0
+2021-10-06 18:58:19.410 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 98418415127105536, 1, 0, test, 1, 1, 1
+2021-10-06 18:58:19.411 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 3, 1, 0, 文档2, 2, 1, 0
+2021-10-06 18:58:19.411 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 2, 0
+2021-10-06 18:58:19.412 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909499124158464[0;39m <==        Row: 99818989638782976, 1, 0, test1, 2, 1, 1
+2021-10-06 18:58:19.413 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909499124158464[0;39m <==      Total: 8
+2021-10-06 18:58:19.414 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909499124158464[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":57,"voteCount":53},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":3,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":98418415127105536,"name":"test","parent":0,"sort":1,"viewCount":1,"voteCount":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":1,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":2,"voteCount":0},{"ebookId":1,"id":99818989638782976,"name":"test1","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2021-10-06 18:58:19.414 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909499124158464[0;39m ------------- 结束 耗时：15 ms -------------
+2021-10-06 18:58:19.482 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909499472285696[0;39m ------------- 开始 -------------
+2021-10-06 18:58:19.482 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909499472285696[0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/1 GET
+2021-10-06 18:58:19.483 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909499472285696[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2021-10-06 18:58:19.483 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909499472285696[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:19.484 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909499472285696[0;39m 请求参数: [1]
+2021-10-06 18:58:19.485 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909499472285696[0;39m ==>  Preparing: select id , content from content where id = ?
+2021-10-06 18:58:19.486 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909499472285696[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:19.489 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909499472285696[0;39m <==    Columns: id, content
+2021-10-06 18:58:19.489 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909499472285696[0;39m <==        Row: 1, <<BLOB>>
+2021-10-06 18:58:19.490 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909499472285696[0;39m <==      Total: 1
+2021-10-06 18:58:19.491 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909499472285696[0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-10-06 18:58:19.492 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909499472285696[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:58:19.507 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909499472285696[0;39m <==    Updates: 1
+2021-10-06 18:58:19.508 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909499472285696[0;39m 返回结果: {"content":"https://2x.antdv.com/components/tree-select-cn","success":true}
+2021-10-06 18:58:19.508 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909499472285696[0;39m ------------- 结束 耗时：26 ms -------------
+2021-10-06 18:58:20.466 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909503599480832[0;39m ------------- 开始 -------------
+2021-10-06 18:58:20.466 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909503599480832[0;39m 请求地址: http://127.0.0.1:8880/doc/vote/1 GET
+2021-10-06 18:58:20.467 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909503599480832[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2021-10-06 18:58:20.467 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909503599480832[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:20.468 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909503599480832[0;39m 请求参数: [1]
+2021-10-06 18:58:20.510 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100909503599480832[0;39m key已存在：DOC_VOTE_1_127.0.0.1
+2021-10-06 18:58:20.511 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100909503599480832[0;39m 业务异常：您已点赞过
+2021-10-06 18:58:20.513 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100909503599480832[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2021-10-06 18:58:21.334 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909507240136704[0;39m ------------- 开始 -------------
+2021-10-06 18:58:21.335 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909507240136704[0;39m 请求地址: http://127.0.0.1:8880/doc/vote/1 GET
+2021-10-06 18:58:21.336 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909507240136704[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2021-10-06 18:58:21.336 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909507240136704[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:58:21.337 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909507240136704[0;39m 请求参数: [1]
+2021-10-06 18:58:21.378 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100909507240136704[0;39m key已存在：DOC_VOTE_1_127.0.0.1
+2021-10-06 18:58:21.380 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100909507240136704[0;39m 业务异常：您已点赞过
+2021-10-06 18:58:21.381 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100909507240136704[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2021-10-06 18:59:42.013 INFO  com.jiawa.wiki.websocket.WebSocketServer          :41   [32m100909477204725760[0;39m 连接关闭，token：1SCJ1ga983，session id：1！当前连接数：0
+2021-10-06 18:59:43.062 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m100909482686681088[0;39m 有新连接：token：SFNiwZlx44，session id：2，当前连接数：1
+2021-10-06 18:59:43.152 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909850409701376[0;39m ------------- 开始 -------------
+2021-10-06 18:59:43.153 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909850409701376[0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-10-06 18:59:43.153 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909850409701376[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2021-10-06 18:59:43.153 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909850409701376[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:59:43.154 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909850409701376[0;39m 请求参数: [1]
+2021-10-06 18:59:43.156 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909850409701376[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-10-06 18:59:43.156 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909850409701376[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:59:43.158 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-10-06 18:59:43.159 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 1, 1, 0, 文档1, 1, 58, 53
+2021-10-06 18:59:43.160 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 2, 0
+2021-10-06 18:59:43.162 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 3, 0
+2021-10-06 18:59:43.163 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 2, 0
+2021-10-06 18:59:43.163 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 98418415127105536, 1, 0, test, 1, 1, 1
+2021-10-06 18:59:43.164 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 3, 1, 0, 文档2, 2, 1, 0
+2021-10-06 18:59:43.165 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 2, 0
+2021-10-06 18:59:43.166 TRACE com.jiawa.wiki.mapper.DocMapper.selectByExample   :143  [32m100909850409701376[0;39m <==        Row: 99818989638782976, 1, 0, test1, 2, 1, 1
+2021-10-06 18:59:43.167 DEBUG com.jiawa.wiki.mapper.DocMapper.selectByExample   :137  [32m100909850409701376[0;39m <==      Total: 8
+2021-10-06 18:59:43.169 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909850409701376[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":58,"voteCount":53},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":3,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":2,"voteCount":0},{"ebookId":1,"id":98418415127105536,"name":"test","parent":0,"sort":1,"viewCount":1,"voteCount":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":1,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":2,"voteCount":0},{"ebookId":1,"id":99818989638782976,"name":"test1","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2021-10-06 18:59:43.169 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909850409701376[0;39m ------------- 结束 耗时：17 ms -------------
+2021-10-06 18:59:43.242 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909850787188736[0;39m ------------- 开始 -------------
+2021-10-06 18:59:43.243 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909850787188736[0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/1 GET
+2021-10-06 18:59:43.243 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909850787188736[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2021-10-06 18:59:43.243 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909850787188736[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:59:43.244 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909850787188736[0;39m 请求参数: [1]
+2021-10-06 18:59:43.244 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909850787188736[0;39m ==>  Preparing: select id , content from content where id = ?
+2021-10-06 18:59:43.245 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909850787188736[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:59:43.247 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909850787188736[0;39m <==    Columns: id, content
+2021-10-06 18:59:43.248 TRACE c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :143  [32m100909850787188736[0;39m <==        Row: 1, <<BLOB>>
+2021-10-06 18:59:43.250 DEBUG c.j.wiki.mapper.ContentMapper.selectByPrimaryKey  :137  [32m100909850787188736[0;39m <==      Total: 1
+2021-10-06 18:59:43.252 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909850787188736[0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-10-06 18:59:43.253 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909850787188736[0;39m ==> Parameters: 1(Long)
+2021-10-06 18:59:43.284 DEBUG c.j.wiki.mapper.DocMapperCust.increaseViewCount   :137  [32m100909850787188736[0;39m <==    Updates: 1
+2021-10-06 18:59:43.285 INFO  com.jiawa.wiki.aspect.LogAspect                   :89   [32m100909850787188736[0;39m 返回结果: {"content":"https://2x.antdv.com/components/tree-select-cn","success":true}
+2021-10-06 18:59:43.285 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m100909850787188736[0;39m ------------- 结束 耗时：43 ms -------------
+2021-10-06 18:59:44.146 INFO  com.jiawa.wiki.aspect.LogAspect                   :52   [32m100909854578839552[0;39m ------------- 开始 -------------
+2021-10-06 18:59:44.147 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m100909854578839552[0;39m 请求地址: http://127.0.0.1:8880/doc/vote/1 GET
+2021-10-06 18:59:44.148 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m100909854578839552[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2021-10-06 18:59:44.149 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m100909854578839552[0;39m 远程地址: 127.0.0.1
+2021-10-06 18:59:44.149 INFO  com.jiawa.wiki.aspect.LogAspect                   :77   [32m100909854578839552[0;39m 请求参数: [1]
+2021-10-06 18:59:44.194 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m100909854578839552[0;39m key已存在：DOC_VOTE_1_127.0.0.1
+2021-10-06 18:59:44.196 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m100909854578839552[0;39m 业务异常：您已点赞过
+2021-10-06 18:59:44.198 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m100909854578839552[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
