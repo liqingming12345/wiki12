@@ -2,7 +2,7 @@ package com.jiawa.wiki.resp;
 
 import java.util.Date;
 
-public class StatisticResp {
+ public class StatisticResp {
     private Date date;
 
     private int viewCount;
