@@ -11,13 +11,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import TheHeader from '@/components/the-header.vue';
-//import Home from "@/components/Home.vue";
+
 import TheFooter from '@/components/the-footer.vue';
 
 export default defineComponent({
   name: 'app',
   components:{
-   // Home,
     TheHeader,
     TheFooter,
   },
